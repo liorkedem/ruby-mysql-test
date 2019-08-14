@@ -1,0 +1,2 @@
+class Mydummy < ApplicationRecord
+end
