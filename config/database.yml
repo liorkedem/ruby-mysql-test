@@ -6,17 +6,17 @@
 #
 default: &default
   adapter: mysql2
-  username: b56e89c624ca34
-  password: 01e555e4
-  # username: root
-  # password: 
+  # username: b56e89c624ca34
+  # password: 01e555e4
+  username: root
+  password: 
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 development:
   <<: *default
-  database: heroku_9975d8e4576021b
-  # database: myarticles
+  # database: heroku_9975d8e4576021b
+  database: myarticles
   
 
 # Warning: The database defined as "test" will be erased and
@@ -24,10 +24,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: heroku_9975d8e4576021b
-  # database: myarticles
+  # database: heroku_9975d8e4576021b
+  database: myarticles
 
 production:
   <<: *default
-  database: heroku_9975d8e4576021b
-  # database: myarticles
+  # database: heroku_9975d8e4576021b
+  database: myarticles
